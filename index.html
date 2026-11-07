@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Olaa ♡</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="loading" id="loading">
+        <div class="heart">♡</div>
+        <h1>Olaa...</h1>
+        <p>Preparing something special for you ✨</p>
+    </div>
+
+    <header>
+        <h3>For Olaa ♡</h3>
+        <button id="music">♫ Music</button>
+    </header>
+
+    <section class="hero">
+        <div class="moon">☾</div>
+        <p>A LITTLE SURPRISE FOR YOU</p>
+        <h1>Happy Saturday<br><span>Night, Olaa!</span></h1>
+        <p>Tonight is a special night, because this little website is made just for you.</p>
+        <a href="#letter">Open Your Surprise ♡</a>
+    </section>
+
+    <section id="letter">
+        <h2>Dear Olaa 💌</h2>
+        <div class="card">
+            <p>Hellooo, Olaaa!</p>
+            <p>Selamat malam minggu! Semoga hari ini menyenangkan untuk kamu.</p>
+            <p>Jangan terlalu banyak pikiran, jangan lupa makan, dan jangan lupa bahagia.</p>
+            <p>Remember, you deserve all the beautiful things in this world. ♡</p>
+            <button onclick="secret()">Open Secret Message</button>
+            <p id="secret"></p>
+        </div>
+    </section>
+
+    <section>
+        <h2>How's Your Mood Tonight?</h2>
+        <p>Pilih suasana hatimu sekarang!</p>
+        <div class="choices">
+            <button onclick="mood('happy')">🥰 Happy</button>
+            <button onclick="mood('tired')">😴 Tired</button>
+            <button onclick="mood('sad')">🥺 Sad</button>
+            <button onclick="mood('random')">🤪 Random</button>
+        </div>
+        <h3 id="moodResult"></h3>
+    </section>
+
+    <section>
+        <h2>Pick Your Little Gift 🎁</h2>
+        <div class="choices">
+            <button onclick="gift(1)">🎁 Gift 1</button>
+            <button onclick="gift(2)">🎀 Gift 2</button>
+            <button onclick="gift(3)">💌 Gift 3</button>
+        </div>
+        <h3 id="giftResult"></h3>
+    </section>
+
+    <section>
+        <h2>A Little Reminder ♡</h2>
+        <div class="card">
+            <h3 id="compliment">You are special, Olaa!</h3>
+        </div>
+    </section>
+
+    <section class="ending">
+        <h1>Good Night, Olaa 🌙</h1>
+        <p>Selamat bobo dari botakk yang jauh di surabayaa.</p>
+        <button onclick="hug()">Send Virtual Hug ♡</button>
+        <h2 id="hugResult"></h2>
+    </section>
+
+    <audio id="audio" loop src="music.mp3"></audio>
+
+    <script src="script.js"></script>
+</body><audio id="bgMusic" loop>
+    <source src="music.mp3" type="audio/mpeg">
+</audio>
+</html>
